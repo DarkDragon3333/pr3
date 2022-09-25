@@ -1,4 +1,4 @@
-package ru.mirea.pr3.num3;
+package ru.mirea.pr3;
 
 public class Rectangle extends Shape {
     public double width;

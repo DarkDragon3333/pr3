@@ -1,42 +1,9 @@
-package ru.mirea.pr3.num3;
+package ru.mirea.pr3;
 
-public abstract class Shape {
-
-    protected boolean filled;
-    protected String color;
-
-    public void Shape() {
-        this.color = "blue";
-        this.filled = false;
-    }
-
-    public void Shape(String color, boolean filled) {
-        this.color = color;
-        this.filled = filled;
-    }
-
-    public String getColor() {
-        return this.color;
-    }
-
-    public void setColor(String color) {
-        this.color = color;
-    }
-
-    public void setFilled(boolean filled) {
-        this.filled = filled;
-    }
-
-    public boolean isFilled() {
-        return this.filled;
-    }
-
-    abstract double getArea();
-
-    abstract double getPerimeter();
-
+public class Test {
     public static void main(String[] args) {
         Shape s1 = new Circle(5.5, "RED", false); // Upcast Circle to Shape
+        System.out.println();
         System.out.println("s1:" + s1); // which version?
         System.out.println("Area: " + s1.getArea()); // which version?
         System.out.println("Perimeter: " + s1.getPerimeter()); // which version?
@@ -96,5 +63,14 @@ public abstract class Shape {
         System.out.println("Color: " + sq1.getColor());
         System.out.println("Side: " + sq1.getSide());
         System.out.println("Length: " + sq1.getLength());
+        System.out.println();
+        MovablePoint p = new MovablePoint(5, 5, 6, 7);
+        p.Down();
+        p.Left();
+        System.out.println();
+
+        MovableCircle c = new MovableCircle(6, 3, 1, 2000);
+        c.Up();
+        c.Right();
     }
 }

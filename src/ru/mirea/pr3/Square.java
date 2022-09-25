@@ -1,4 +1,4 @@
-package ru.mirea.pr3.num3;
+package ru.mirea.pr3;
 
 public class Square extends Rectangle {
     public double side;

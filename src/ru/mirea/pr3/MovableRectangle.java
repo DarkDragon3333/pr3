@@ -1,6 +1,6 @@
-package ru.mirea.pr3.num4;
+package ru.mirea.pr3;
 
-public class MovableRectangle implements Movable{
+public class MovableRectangle implements Movable {
     MovablePoint topLeft = new MovablePoint(0, 5, 4, 4);
     MovablePoint bottomRight = new MovablePoint(5, 0, 4, 4);
 

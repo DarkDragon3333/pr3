@@ -1,7 +1,7 @@
-package ru.mirea.pr3.num4;
+package ru.mirea.pr3;
 
 public class MovablePoint implements Movable {
-    int x = 0, y = 0, xSpeed = 0, ySpeed = 0;
+    int x, y, xSpeed, ySpeed;
 
     public MovablePoint(int x, int y, int xSpeed, int ySpeed) {
         this.x = x;

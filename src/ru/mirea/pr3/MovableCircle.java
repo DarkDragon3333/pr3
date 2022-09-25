@@ -1,4 +1,4 @@
-package ru.mirea.pr3.num4;
+package ru.mirea.pr3;
 
 public class MovableCircle implements Movable {
     MovablePoint center = new MovablePoint(5, 5, 6, 7);
